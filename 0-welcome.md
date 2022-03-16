@@ -3,4 +3,13 @@ Welcome to the python data structure tutorial. Data structures are the fundament
 
 - [Stacks](https://github.com/Kyle5150/cse212-final-project/blob/main/1-stack.md)
 - [Sets](https://github.com/Kyle5150/cse212-final-project/blob/main/2-set.md)
-- [Trees]()
+- [Trees](https://github.com/Kyle5150/cse212-final-project/blob/main/3-tree.md)
+
+Each module will contain descriptions and examples. At the end of each module, you will find a problem to solve on your own. You should only look at the solution after you have attempted to solve the problem first.
+
+## Contact
+For questions or comments, please send them to:
+
+Kyle Johnson, BYU-Idaho, CSE 310
+
+[joh19128@byui.edu](joh19128@byui.edu)
