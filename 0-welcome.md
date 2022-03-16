@@ -10,6 +10,6 @@ Each module will contain descriptions and examples. At the end of each module, y
 ## Contact
 For questions or comments, please send them to:
 
-Kyle Johnson, BYU-Idaho, CSE 310
+Kyle Johnson, BYU-Idaho, CSE 212
 
 [joh19128@byui.edu](joh19128@byui.edu)
