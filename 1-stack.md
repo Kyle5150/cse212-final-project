@@ -12,7 +12,7 @@ Think of a stack in python as a pringles can. You can only take the chip that wa
 
 ![stack-LIFO-image#1](https://user-images.githubusercontent.com/77080668/159053784-22f92d19-d8cc-46b8-84e2-d08d5b895849.jpeg)
 
-In python, this code will create a stack, add the numbers 1, 2, 3 to the stack (in that order) and then remove one of those numbers from the stack. Which number will be removed from the stack in this code?
+In python, this code will create a stack, add the numbers 1, 2, 3 to the stack (in that order) and then remove one of those numbers from the stack using the .pop() function. Which number will be removed from the stack in this code?
 ```python
 my_stack = []
 
