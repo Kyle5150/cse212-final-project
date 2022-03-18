@@ -41,5 +41,40 @@ In word, the *Undo* feature works exactly like a stack. This image shows as if y
 | size()          | Returns the size of the stack.              | length = len(my_stack) | O(1)  |
 | empty()         | Returns True if the size of the stack is 0. | if len(my_stack) == 0  | O(1)  |
 
+## Example: Memory
+
+In this example, imagine you are playing a game that allows your character to move in one of four directions at a time, and a stack records your movements every action you perform. You have the options to view your previous actions, add more actions, and undo actions. This example shows exactly how the stack data structure works.
+
+Review this code and use it as help for the Problem to Solve.
+
+```python
+my_stack = []
+
+def movements(action):
+    my_stack.append(action)
+    print(f"\n {my_stack}")
+
+user = "0"
+while user != "4":
+    user = input("\n1. View Memory \n2. Add Action \n3. Undo Action \n4. Quit \nPlease enter a number: ")
+    if user == "1":
+        if len(my_stack) == 0:
+            print("\nNothing in memory")
+        else:
+            print(my_stack)
+    elif user == "2":
+        action = input("\nF (forward), B (backward), L (left), R (right): ")
+        if action == "F":
+            movements(action)
+        elif action == "B":
+            movements(action)
+        elif action == "L":
+            movements(action)
+        elif action == "R":
+            movements(action)
+    elif user == "3":
+        my_stack.pop()
+        print(f"\n {my_stack}")
+```
 
 [Back to Welcome Page](https://github.com/Kyle5150/cse212-final-project/blob/main/0-welcome.md)
