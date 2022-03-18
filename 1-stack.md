@@ -77,4 +77,20 @@ while user != "4":
         print(f"\n {my_stack}")
 ```
 
+## Problem to Solve: Shopping Cart
+
+Write a program that creates a shopping cart of items with additional features:
+
+- view the shopping cart
+- returns the size of the cart
+- undo the last item entered
+
+You can test your program with the following scenarios (done in order):
+
+1. add apple, cereal, and bread to the cart: ["apple", "cereal", "bread"]
+2. remove the last two items entered: ["apple"]
+3. return the size of the cart: 1
+
+You can check your code with the solution here: 
+
 [Back to Welcome Page](https://github.com/Kyle5150/cse212-final-project/blob/main/0-welcome.md)
