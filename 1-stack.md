@@ -91,6 +91,6 @@ You can test your program with the following scenarios (done in order):
 2. remove the last two items entered: ["apple"]
 3. return the size of the cart: 1
 
-You can check your code with the solution here: [Solution](https://github.com/Kyle5150/cse212-final-project/edit/main/Python_Files.md#stack-problem-shopping-cart)
+You can check your code with the solution here: [Solution](https://github.com/Kyle5150/cse212-final-project/blob/main/Python_Files.md#stack-problem-shopping-cart)
 
 [Back to Welcome Page](https://github.com/Kyle5150/cse212-final-project/blob/main/0-welcome.md)
