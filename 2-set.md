@@ -5,9 +5,9 @@ Sets also do not allow duplicate values within them. With the use of **hashing**
 
 Using the set data structure can raise some issues when dealing with filled spots within the set. Techniques such as **open addressing** and **chaining** solve these conflicts:
 
-##Order
+## Order
 
-##Hashing and Efficiency
+## Hashing and Efficiency
 
-##Solving Conflicts
+## Solving Conflicts
 
