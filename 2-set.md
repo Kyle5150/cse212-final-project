@@ -11,4 +11,4 @@ Using the set data structure can raise some issues when dealing with filled spot
 
 ## Solving Conflicts
 
-[Back to welcome page](https://github.com/Kyle5150/cse212-final-project/blob/main/0-welcome.md)
+[Back to Welcome Page](https://github.com/Kyle5150/cse212-final-project/blob/main/0-welcome.md)
