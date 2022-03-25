@@ -21,9 +21,14 @@ Output: {1, 2, 3, 8, 9}
 ```
 The numbers 1 and 2 are contained in the originally created set. When printed out, only unique values are returned, and not in numerical order. This works the same with string values in sets, which we will get to later.
 
-### Operations
+### Common Set Operations
 
-
+| Set Operation   | Description                                 | Python                 | Big-O |
+|-----------------|---------------------------------------------|------------------------|-------|
+| add(value)      | Adds a "value" to the set.                  | my_set.add(value)      | O(1)  |
+| remove(value)   | Removes the specific "value" from the set.  | my_set.remove(value)   | O(1)  |
+| member(value)   | Checks membership of a "value" in the set.  | if value in my_set:    | O(1)  |
+| size()          | Returns the number of items in the set.     | length = len(my_set)   | O(1)  |
 
 ## Hashing and Efficiency
 
