@@ -89,7 +89,7 @@ The possiblity of having an index already occupied in a set (especially with big
 
 If we use our index(n) hashing function and find that something already occupies the space (or the item in that space is not what we are looking for), then the open addressing strategy moves to the next available space. The simplest way this is done is by moving to the next available space to the right. However, this approach is that a conflict can result in the creation of more conflicts.
 
-3. Chaining
+2. Chaining
 
 Instead of looking for a new place for our data, we can make a list of values that are held in the same space/index. Think of chaining like adding multiple files into a folder being held in a cabinet of folders.
 
