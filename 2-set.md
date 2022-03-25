@@ -63,6 +63,8 @@ This image shows the process of index(n) = n % 10:
 
 ![set-Hashing-image#1](https://user-images.githubusercontent.com/77080668/160170950-d9cc6164-e595-449d-a4d8-3268a78a7706.png)
 
+The 'Hash Table' represents the set, and the 'List' represents the values being inputted into the set.
+
 The equations mentioned earlier can be generalized into the equation: index(n) = n % sparse_list_size. This works great for numbers and can also be used for string values by using the **hashing function** - hash(n). The hashing function converts non-integers into integers so that the modulo operation can be used. 
 
 ```python
