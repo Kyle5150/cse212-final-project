@@ -57,7 +57,7 @@ Output: {4, 5}
 
 If we used the value we wanted to add to our set to determine the index into the list, we might be able to achieve O(1). Consider the function index(n) = n. This would work for small amounts of data per set, however, if we were working with billions od data values, this index(n) = n function would not be efficient enough.
 
-This is where the modula (%) operator is used behind the scenes when sets are being used. Using this equation: index(n) = n % 100 we can now store values in the hundreds of millions. 
+This is where the modula (%) operator is used behind the scenes when sets are being used. Using this equation: index(n) = n % 10 we can now store values in the hundreds of millions. 
 
 This image shows the process of index(n) = n % 10:
 ![set-Hashing-image#1](https://user-images.githubusercontent.com/77080668/160170950-d9cc6164-e595-449d-a4d8-3268a78a7706.png)
