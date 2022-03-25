@@ -99,6 +99,20 @@ Using these conflict resolving strategies helps us keep the O(1) performace with
 
 ## Problem to Solve: Searching for Users
 
+Write a program (utilizing sets) that prints where each user is found, either on Facebook, Instagram, or both. Then print the number of users only on Facebook, only on Instagram, and number of users on both platforms.
+
+Use these two sets to write this program:
+```python
+facebook_users = {"xd35", "pdi89", "qiqq89", "htayw098", "hsyt2", "iows76", "cow45", "pkuy77", "jsiiw90", "tree33"}
+
+instagram_users = {"htayw098", "cow45", "rewd67", "ghost7", "perky", "lot43", "kk12"}
+```
+
+Remember these notes as you create your program:
+1. To create an empty set: my_set = set()
+2. Keywords: 'in' and 'not in'
+3. Intersection and Union might come in handy.
+
 
 
 [Back to Welcome Page](https://github.com/Kyle5150/cse212-final-project/blob/main/0-welcome.md)
