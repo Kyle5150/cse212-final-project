@@ -95,4 +95,10 @@ Instead of looking for a new place for our data, we can make a list of values th
 
 Using these conflict resolving strategies helps us keep the O(1) performace with sets.
 
+## Example: 
+
+## Problem to Solve: Searching for Users
+
+
+
 [Back to Welcome Page](https://github.com/Kyle5150/cse212-final-project/blob/main/0-welcome.md)
