@@ -113,6 +113,6 @@ Remember these notes as you create your program:
 2. Keywords: 'in' and 'not in'
 3. Intersection and Union might come in handy.
 
-
+You can check your code with the solution here: [Solution](https://github.com/Kyle5150/cse212-final-project/blob/main/Python_Files.md#set-problem-searching-for-users)
 
 [Back to Welcome Page](https://github.com/Kyle5150/cse212-final-project/blob/main/0-welcome.md)
