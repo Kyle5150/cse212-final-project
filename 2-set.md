@@ -62,7 +62,24 @@ This is where the modula (%) operator is used behind the scenes when sets are be
 This image shows the process of index(n) = n % 10:
 ![set-Hashing-image#1](https://user-images.githubusercontent.com/77080668/160170950-d9cc6164-e595-449d-a4d8-3268a78a7706.png)
 
+The equations mentioned earlier can be generalized into the equation: index(n) = n % sparse_list_size. This works great for numbers and can also be used for string values by using the **hashing function** - hash(n). The hashing function converts non-integers into integers so that the modulo operation can be used. 
+
+```python
+hash(6)
+hash(-5)
+hash("car")
+hash(True)
+```
+```python
+Output: 6
+        -5
+        1884511358876639000
+        1
+```
+The values returned by the hash function will vary every time you run the code, but they will be consistent while you are running the code to completion.
 
 ## Solving Conflicts
+
+
 
 [Back to Welcome Page](https://github.com/Kyle5150/cse212-final-project/blob/main/0-welcome.md)
