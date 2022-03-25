@@ -99,7 +99,7 @@ Using these conflict resolving strategies helps us keep the O(1) performace with
 
 This Python example shows how a set can be used to retrieve data. The function 'get_unique_characters' takes a message, puts the message into all lowercase letters, removes spaces from the message, and stores all the characters in a set. Because sets don't take duplicate values, it only keeps unique characters, allowing you to print out each character and the total number of unique characters. Feel free to change the message in this code.
 
-Use this code to help you solve the next problem.
+Review this code and use it as help for the Problem to Solve.
 ```python
 def get_unique_characters(message):
     message_set = set()
