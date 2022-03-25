@@ -30,6 +30,29 @@ The numbers 1 and 2 are contained in the originally created set. When printed ou
 | member(value)   | Checks membership of a "value" in the set.  | if value in my_set:    | O(1)  |
 | size()          | Returns the number of items in the set.     | length = len(my_set)   | O(1)  |
 
+### Mathematical Operations
+
+1. Intersection
+2. Union
+
+When comparing values between two sets, Python has built in methods of finding similar values in multiple sets and combining multiple sets.
+
+This code shows both the intersection (&) of set_1 and set_2, and the union (|) of them.
+```python
+set_1 = {1, 2, 3, 4, 5}
+set_2 = {4, 5, 6, 7, 8}
+
+similar = set_1 & set_2
+combo = set_1 | set_2
+
+print(similar)
+print(combo)
+```
+```python
+Output: {4, 5}
+        {1, 2, 3, 4, 5, 6, 7, 8}
+```
+
 ## Hashing and Efficiency
 
 ## Solving Conflicts
