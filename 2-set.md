@@ -68,10 +68,10 @@ The 'Hash Table' represents the set, and the 'List' represents the values being 
 The equations mentioned earlier can be generalized into the equation: index(n) = n % sparse_list_size. This works great for numbers and can also be used for string values by using the **hashing function** - hash(n). The hashing function converts non-integers into integers so that the modulo operation can be used. 
 
 ```python
-hash(6)
-hash(-5)
-hash("car")
-hash(True)
+print(hash(6))
+print(hash(-5))
+print(hash("car"))
+print(hash(True))
 ```
 ```python
 Output: 6
