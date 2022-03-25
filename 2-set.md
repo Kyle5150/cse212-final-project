@@ -95,7 +95,24 @@ Instead of looking for a new place for our data, we can make a list of values th
 
 Using these conflict resolving strategies helps us keep the O(1) performace with sets.
 
-## Example: 
+## Example: Unique Characters
+
+This Python example shows how a set can be used to retrieve data. The function 'get_unique_characters' takes a message, puts the message into all lowercase letters, removes spaces from the message, and stores all the characters in a set. Because sets don't take duplicate values, it only keeps unique characters, allowing you to print out each character and the total number of unique characters. Feel free to change the message in this code.
+
+Use this code to help you solve the next problem.
+```python
+def get_unique_characters(message):
+    message_set = set()
+    lowercase_message = message.lower()
+    no_spaces_message = lowercase_message.replace(" ", "")
+    for x in no_spaces_message:
+        message_set.add(x)
+    print(f"\nAll unique letters: {message_set}\n")
+    print(f"Number of unique characters: {len(message_set)}\n")
+
+message = "Hello World!"
+get_unique_characters(message)
+```
 
 ## Problem to Solve: Searching for Users
 
