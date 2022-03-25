@@ -26,3 +26,34 @@ while user != "5":
     elif user == "4":
         print(f"\n{len(my_stack)}")
 ```
+## Set Problem: Searching for Users
+
+```python
+facebook_users = {"xd35", "pdi89", "qiqq89", "htayw098", "hsyt2", "iows76", "cow45", "pkuy77", "jsiiw90", "tree33"}
+
+instagram_users = {"htayw098", "cow45", "rewd67", "ghost7", "perky", "lot43", "kk12"}
+
+Only_Facebook = set()
+
+Only_Instagram = set()
+
+for x in facebook_users:
+    if x not in instagram_users:
+        print(f"user: {x} is only found on Facebook\n")
+        Only_Facebook.add(x)
+
+for x in instagram_users:
+    if x not in facebook_users:
+        print(f"user: {x} is only found on Instagram\n")
+        Only_Instagram.add(x)
+
+Intersection = facebook_users & instagram_users
+for x in Intersection:
+    print(f"user: {x} is found on both Facebook and Instagram\n")
+
+print(f"Number of only Facebook users: {len(Only_Facebook)}")
+
+print(f"Number of only Instagram users: {len(Only_Instagram)}")
+
+print(f"Number of both platform users: {len(Intersection)}")
+```
