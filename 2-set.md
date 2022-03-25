@@ -76,7 +76,7 @@ Output: 6
         1884511358876639000
         1
 ```
-The values returned by the hash function will vary every time you run the code, but they will be consistent while you are running the code to completion.
+String values returned by the hash function will vary every time you run the code, but they will be consistent while you are running the code to completion.
 
 ## Solving Conflicts
 
