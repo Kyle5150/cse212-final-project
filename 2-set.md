@@ -53,7 +53,7 @@ Output: {4, 5}
         {1, 2, 3, 4, 5, 6, 7, 8}
 ```
 
-## Hashing and Efficiency
+## Hashing
 
 If we used the value we wanted to add to our set to determine the index into the list, we might be able to achieve O(1). Consider the function index(n) = n. This would work for small amounts of data per set, however, if we were working with billions od data values, this index(n) = n function would not be efficient enough.
 
@@ -83,6 +83,16 @@ String values returned by the hash function will vary every time you run the cod
 
 ## Solving Conflicts
 
+The possiblity of having an index already occupied in a set (especially with big sets of data) is possible. There are two main ways of resolving conflicts within sets:
 
+1. Open Addressing
+
+If we use our index(n) hashing function and find that something already occupies the space (or the item in that space is not what we are looking for), then the open addressing strategy moves to the next available space. The simplest way this is done is by moving to the next available space to the right. However, this approach is that a conflict can result in the creation of more conflicts.
+
+3. Chaining
+
+Instead of looking for a new place for our data, we can make a list of values that are held in the same space/index. Think of chaining like adding multiple files into a folder being held in a cabinet of folders.
+
+Using these conflict resolving strategies helps us keep the O(1) performace with sets.
 
 [Back to Welcome Page](https://github.com/Kyle5150/cse212-final-project/blob/main/0-welcome.md)
