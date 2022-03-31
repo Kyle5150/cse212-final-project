@@ -132,6 +132,6 @@ Remember these notes as you create your program:
 
 You can check your code with the solution here: [Solution](https://github.com/Kyle5150/cse212-final-project/blob/main/Python_Files.md#set-problem-searching-for-users)
 
-* Remember there are always multiple 
+* Remember there is never simply one solution!
 
 [Back to Welcome Page](https://github.com/Kyle5150/cse212-final-project/blob/main/0-welcome.md)
