@@ -93,6 +93,6 @@ You can test your program with the following scenarios (done in order):
 
 You can check your code with the solution here: [Solution](https://github.com/Kyle5150/cse212-final-project/blob/main/Python_Files.md#stack-problem-shopping-cart)
 
-* Remember there are always multiple ways to solve problems in code!
+* Remember there is never simply one solution!
 
 [Back to Welcome Page](https://github.com/Kyle5150/cse212-final-project/blob/main/0-welcome.md)
