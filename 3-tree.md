@@ -10,6 +10,20 @@ A **binary search tree**, or BST for short, is a tree whose nodes store a key th
 
 ## Recursion
 
+Recursion is a technique where a function calls itself.
+
+This is an example of a recursive function.
+```python
+def recurse():
+  recurse()
+recurse()
+```
+This function will call the 'recurse()' functin forever.
+
+To properly use recursion, there are two rules to always follow:
+1. Smaller Problem
+2. Base Case
+
 ## Binary Trees
 
 ## Binary Search Tree (BST)
