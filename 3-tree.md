@@ -18,7 +18,7 @@ def recurse():
   recurse()
 recurse()
 ```
-This function will call the 'recurse()' functin forever.
+This function will call the 'recurse()' function forever.
 
 To properly use recursion, there are two rules to always follow:
 1. Smaller Problem
