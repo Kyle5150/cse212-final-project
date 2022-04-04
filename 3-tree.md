@@ -60,6 +60,10 @@ Depending on how efficient a recursive function is, the performance of a recursi
 
 ## Binary Trees
 
+A tree whose elements have at most two children is called a **binary tree**. Each element in a binary tree can have only two children. A node’s left child must have a value less than its parent’s value, and the node’s right child must have a value greater than its parent value.
+
+![tree-Binary-Tree-image#1](https://user-images.githubusercontent.com/77080668/161633147-daa438eb-bb82-424d-a455-3b308647a7e7.png)
+
 ## Binary Search Tree (BST)
 
 ## BST Operations
