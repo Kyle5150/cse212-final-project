@@ -30,10 +30,10 @@ Applying these two rules to our previous code example, you can begin to see the 
 ```python
 def recurse(count):
   if count <= 0:  # Base Case
-		return
-	else:
-		print("Recursing")
-		recurse(count-1)  # Smaller Problem
+	return
+  else:
+	print("Recursing")
+	recurse(count-1)  # Smaller Problem
 ```
 The smaller problem is 'count-1' and the base case is when 'count' is equal (or less than) zero.
 
