@@ -56,6 +56,8 @@ if n in remember:
 ```
 This is not a full/functional code example, but this is what memoization would look like in a possible soluion.
 
+Depending on how efficient a recursive function is, the performance of a recursive algorithm can, at best, be O(log n) through memoization.
+
 ## Binary Trees
 
 ## Binary Search Tree (BST)
