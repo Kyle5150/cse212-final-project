@@ -22,7 +22,20 @@ This function will call the 'recurse()' function forever.
 
 To properly use recursion, there are two rules to always follow:
 1. Smaller Problem
+- When using recursion, you need to make sure to call the function on a smaller problem. Without this rule, our function will run forever.
 2. Base Case
+- As you continue to call the function on a smaller problem, there needs to be a stopping point. You must define a scenario in which recursion is not required. This is called the base case.
+
+Applying these two rules to our previous code example, you can begin to see the benefits of using recursion:
+```python
+def recurse(count):
+  if count <= 0:  # Base Case
+		return
+	else:
+		print("Recursing")
+		recurse(count-1)  # Smaller Problem
+```
+The smaller problem is 'count-1' and the base case is when 'count' is equal (or less than) zero.
 
 ## Binary Trees
 
