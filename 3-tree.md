@@ -37,6 +37,25 @@ def recurse(count):
 ```
 The smaller problem is 'count-1' and the base case is when 'count' is equal (or less than) zero.
 
+### Memoization
+
+**Memoization** is the process of remembering previous results so that additional recursive calls are not needed. For more complicated problems that would require extremem amounts of recursive calls, memoization comes in handy. Think of memoization as a bookmark in an operation of code.
+
+We can implement memoization by simply creating a dictionary that remembers certain curicial spots in a recursive function.
+```python
+if remember is None:
+	remember = dict()
+
+# Base Case
+if n <= 2:
+	return 1
+
+# Check if we have solved this one before
+if n in remember:
+	return remember[n]
+```
+This is not a full/functional code example, but this is what memoization would look like in a possible soluion.
+
 ## Binary Trees
 
 ## Binary Search Tree (BST)
