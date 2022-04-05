@@ -75,6 +75,28 @@ A tree whose elements have at most two children is called a **binary tree**. Eac
 
 A ***binary search tree (BST)*** is a binary tree that follows rules for data that is put into the tree. Data is placed into the BST by comparing the data with the value in the parent node. If the data being added is less than the parent node, then it is put in the left subtree. If the data being added is greater than the parent node, then it is put in the right subtree.
 
+This code will create the beginnings of a tree ny using a 'Node' class and giving the root node a value of 27:
+```python
+# node class
+class Node:
+
+    def __init__(self, data):
+        # left child
+        self.left = None
+        # right child
+        self.right = None
+        # node's value
+        self.data = data
+
+    # print function
+    def PrintTree(self):
+        print(self.data)
+
+root = Node(27)
+
+root.PrintTree()
+```
+
 ## BST Operations
 
 ### Inserting
