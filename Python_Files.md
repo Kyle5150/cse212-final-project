@@ -115,3 +115,5 @@ root.PrintTree()
 print(root.findval(7))
 print(root.findval(14))
 ```
+
+Welcome page [Here](https://github.com/Kyle5150/cse212-final-project/blob/main/0-welcome.md)
