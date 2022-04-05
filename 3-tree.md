@@ -218,6 +218,8 @@ Now it is your turn! Use this starting code to complete your own tree that can p
 2. traverse tree to find values
 3. print full tree
 
+Write your code where it says "#complete function".
+
 ### Starting Code:
 ```python
 class Node:
