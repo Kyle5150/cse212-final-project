@@ -64,9 +64,31 @@ A tree whose elements have at most two children is called a **binary tree**. Eac
 
 ![tree-Binary-Tree-image#1](https://user-images.githubusercontent.com/77080668/161633458-6e559510-96a9-4012-b195-198ae1e90c69.png)
 
+- Node: Each element (number) is a node in the image above.
+- Root: The root is the first node that creates the tree, in this instance, node #8 is the root.
+- Leaf: The nodes that connect to no other nodes are called leaves (1, 4, 7, 13).
+- Parent: A node that has connected nodes is called a parent.
+- Child: The node connected to the parent is called a child.
+- Subtree: The nodes to the left and right of any parent node form a subtree.
+
 ## Binary Search Tree (BST)
 
 ## BST Operations
+
+Common BST Operation | Description | Performance
+------------------------------------------------
+insert(value)	 | Insert a value into the tree.	         | O(log n) - Recursively search the subtrees to find the next available spot
+remove(value)	 | Remove a value from the tree.	         | O(log n) - Recursively search the subtrees to find the value and then remove it. 		         |		                                 |            This will require some cleanup of the adjacent nodes.
+contains(value)	 | Determine if a value is in the tree.	         | O(log n) - Recursively search the subtrees to find the value.
+traverse_forward | Visit all objects from smallest to largest.   | O(n) - Recursively traverse the left subtree and then the right subtree.
+traverse_reverse | Visit all objects from largest to smallest.   | O(n) - Recursively traverse the right subtree and then the left subtree.
+height(node)	 | Determine the height of a node. If the height | O(n) - Recursively find the height of the left and right subtrees and then return the 
+		 | of the tree is needed, the root node is       |        maximum height (plus one to account for the root).
+		 | provided.					 |
+size()		 | Return the size of the BST.		         | O(1) - The size is maintained within the BST class.
+empty()		 | Returns true if the root node is empty.       | O(1) - The comparison of the root node or the size.
+		 | This can also be done by checking the size    |
+		 | for 0.				         |
 
 ## Example: 
 
