@@ -203,7 +203,45 @@ Now it is your turn! Use this starting code to complete your own tree that can p
 2. traverse tree to find values
 3. print full tree
 
+### Starting Code:
+```python
+class Node:
+
+    def __init__(self, data):
+
+        self.left = None
+        self.right = None
+        self.data = data
+
+# Insert method to create nodes
+    def insert(self, data):
+
+        #complete function
+
+# findval method to compare the value with nodes
+    def findval(self, lkpval):
+        
+	#complete function
+
+# Print the tree
+    def PrintTree(self):
+        
+	#complete function
+
+root = Node(27)
+root.insert(14)
+root.insert(35)
+root.insert(31)
+root.insert(10)
+root.insert(19)
+root.PrintTree()
+print(root.findval(7))
+print(root.findval(14))
+```
+
 Try to do as much as you can without looking at any other code.
+
+You can check your code with the solution here: [Solution]()
 
 * Remember there is never simply one solution!
 
