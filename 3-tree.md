@@ -241,7 +241,7 @@ print(root.findval(14))
 
 Try to do as much as you can without looking at any other code.
 
-You can check your code with the solution here: [Solution]()
+You can check your code with the solution here: [Solution](https://github.com/Kyle5150/cse212-final-project/blob/main/Python_Files.md#tree-problem-complete-the-tree)
 
 * Remember there is never simply one solution!
 
