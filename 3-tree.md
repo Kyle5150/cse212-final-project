@@ -73,22 +73,58 @@ A tree whose elements have at most two children is called a **binary tree**. Eac
 
 ## Binary Search Tree (BST)
 
+A ***binary search tree (BST)*** is a binary tree that follows rules for data that is put into the tree. Data is placed into the BST by comparing the data with the value in the parent node. If the data being added is less than the parent node, then it is put in the left subtree. If the data being added is greater than the parent node, then it is put in the right subtree.
+
 ## BST Operations
 
-Common BST Operation | Description | Performance
-------------------------------------------------
-insert(value)	 | Insert a value into the tree.	         | O(log n) - Recursively search the subtrees to find the next available spot
-remove(value)	 | Remove a value from the tree.	         | O(log n) - Recursively search the subtrees to find the value and then remove it. 		         |		                                 |            This will require some cleanup of the adjacent nodes.
-contains(value)	 | Determine if a value is in the tree.	         | O(log n) - Recursively search the subtrees to find the value.
-traverse_forward | Visit all objects from smallest to largest.   | O(n) - Recursively traverse the left subtree and then the right subtree.
-traverse_reverse | Visit all objects from largest to smallest.   | O(n) - Recursively traverse the right subtree and then the left subtree.
-height(node)	 | Determine the height of a node. If the height | O(n) - Recursively find the height of the left and right subtrees and then return the 
-		 | of the tree is needed, the root node is       |        maximum height (plus one to account for the root).
-		 | provided.					 |
-size()		 | Return the size of the BST.		         | O(1) - The size is maintained within the BST class.
-empty()		 | Returns true if the root node is empty.       | O(1) - The comparison of the root node or the size.
-		 | This can also be done by checking the size    |
-		 | for 0.				         |
+### Inserting
+
+This block of code is an example function that inserts new data into the tree by comparin the new value with the parent node:
+```python
+def insert(self, data):
+# Compare the new value with the parent node
+	if self.data:
+	    if data < self.data:
+		if self.left is None:
+		    self.left = Node(data)
+		else:
+		    self.left.insert(data)
+	    elif data > self.data:
+		if self.right is None:
+		    self.right = Node(data)
+		else:
+		    self.right.insert(data)
+	else:
+	    self.data = data
+```
+
+### Traversing
+
+This block of code is an example function that finds if a value is in the tree by comparing it with each node:
+```python
+def findval(self, lkpval):
+# findval method to compare the value with nodes
+	if lkpval < self.data:
+	    if self.left is None:
+		return str(lkpval)+" is not Found"
+	    return self.left.findval(lkpval)
+	elif lkpval > self.data:
+	    if self.right is None:
+		return str(lkpval)+" is not Found"
+	    return self.right.findval(lkpval)
+	else:
+	    return str(self.data) + " is found"
+```
+
+Common BST Operation | Description                                   | Performance
+---------------------|-----------------------------------------------|--------------
+insert(value)        | Insert a value into the tree.                 | O(log n) - Recursively search the subtrees to find the next available spot.
+remove(value)        | Remove a value from the tree.                 | O(log n) - Recursively search the subtrees to find the value and then remove it.                          |                                               |            This will require some cleanup of the adjacent nodes.
+contains(value)      | Determine if a value is in the tree.          | O(log n) - Recursively search the subtrees to find the value.
+traverse_forward     | Visit all objects from smallest to largest.   | O(n) - Recursively traverse the left subtree and then the right subtree.
+traverse_reverse     | Visit all objects from largest to smallest.   | O(n) - Recursively traverse the right subtree and then the left subtree.
+size()               | Return the size of the BST.                   | O(1) - The size is maintained within the BST class.
+empty()              | Returns true if the root node is empty.       | O(1) - The comparison of the root node or the size.
 
 ## Example: 
 
