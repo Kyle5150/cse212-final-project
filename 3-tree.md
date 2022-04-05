@@ -141,16 +141,69 @@ def findval(self, lkpval):
 Common BST Operation | Description                                   | Performance
 ---------------------|-----------------------------------------------|--------------
 insert(value)        | Insert a value into the tree.                 | O(log n) - Recursively search the subtrees to find the next available spot.
-remove(value)        | Remove a value from the tree.                 | O(log n) - Recursively search the subtrees to find the value and then remove it.                          |                                               |            This will require some cleanup of the adjacent nodes.
+remove(value)        | Remove a value from the tree.                 | O(log n) - Recursively search the subtrees to find the value and then remove it.                        |                                               |            This will require some cleanup of the adjacent nodes.
 contains(value)      | Determine if a value is in the tree.          | O(log n) - Recursively search the subtrees to find the value.
 traverse_forward     | Visit all objects from smallest to largest.   | O(n) - Recursively traverse the left subtree and then the right subtree.
 traverse_reverse     | Visit all objects from largest to smallest.   | O(n) - Recursively traverse the right subtree and then the left subtree.
 size()               | Return the size of the BST.                   | O(1) - The size is maintained within the BST class.
 empty()              | Returns true if the root node is empty.       | O(1) - The comparison of the root node or the size.
 
-## Example: 
+## Example: Tree
+
+Here is an example of a tree that can be inserted into. Use this code to complete the **Problem to Solve**.
+```python
+class Node:
+
+    def __init__(self, data):
+
+        self.left = None
+        self.right = None
+        self.data = data
+
+    def insert(self, data):
+# Compare the new value with the parent node
+        if self.data:
+            if data < self.data:
+                if self.left is None:
+                    self.left = Node(data)
+                else:
+                    self.left.insert(data)
+            elif data > self.data:
+                if self.right is None:
+                    self.right = Node(data)
+                else:
+                    self.right.insert(data)
+        else:
+            self.data = data
+
+# Print the tree
+    def PrintTree(self):
+        if self.left:
+            self.left.PrintTree()
+        print(self.data),
+        if self.right:
+            self.right.PrintTree()
+
+# Use the insert method to add nodes
+root = Node(27)
+root.insert(14)
+root.insert(35)
+root.insert(31)
+root.insert(10)
+root.insert(19)
+
+root.PrintTree()
+```
 
 ## Problem to Solve: Complete the Tree
+
+Now it is your turn! Use this starting code to complete your own tree that can perform the following:
+
+1. insert into tree
+2. traverse tree to find values
+3. print full tree
+
+Try to do as much as you can without looking at any other code.
 
 * Remember there is never simply one solution!
 
