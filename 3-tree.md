@@ -138,6 +138,21 @@ def findval(self, lkpval):
 	    return str(self.data) + " is found"
 ```
 
+You can also use the '__iter__' starting function and the 'yeild' command to traverse through a tree data structure.
+```python
+def __iter__(self):
+	"""
+    Perform a forward traversal (in order traversal) starting from 
+    the root of the BST.  This is called a generator function.
+    This function is called when a loop	is performed:
+
+	for value in my_bst:
+		print(value)
+
+	"""
+	yield from self._traverse_forward(self.root)  # Start at the root
+```
+
 Common BST Operation | Description                                   | Performance
 ---------------------|-----------------------------------------------|--------------
 insert(value)        | Insert a value into the tree.                 | O(log n) - Recursively search the subtrees to find the next available spot.
